@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About CSC Nabagram - Tathya Mitra Kendra. Learn about our mission, vision, and history of providing trusted digital citizen services.">
+    <meta name="keywords" content="About CSC Nabagram, Digital India, Government Services, History, Mission, Vision">
+    <title>About Us | CSC NABAGRAM - TATHYA MITRA KENDRA</title>
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="About CSC Nabagram - Tathya Mitra Kendra">
+    <meta property="og:description" content="Discover the mission, vision, and history of your trusted digital service partner.">
+    <meta property="og:type" content="website">
+    
+    <!-- CSS and Fonts -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <style>
+        .page-header {
+            background-color: var(--color-navy);
+            color: var(--color-white);
+            padding: 4rem 0;
+            text-align: center;
+            border-bottom: 4px solid var(--color-green);
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: var(--color-saffron);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            border-radius: var(--radius-sm);
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: var(--color-white);
+            border: 4px solid var(--color-green);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .left { left: 0; }
+        .right { left: 50%; }
+        .right::after { left: -10px; }
+        
+        .timeline-content {
+            padding: 20px;
+            background-color: var(--color-white);
+            position: relative;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+        }
+        
+        @media screen and (max-width: 600px) {
+            .timeline::after { left: 31px; }
+            .timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; }
+            .timeline-item::after { left: 21px; }
+            .right { left: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="ph ph-fingerprint logo-icon"></i>
+                <div class="logo-text">
+                    <h1>CSC NABAGRAM</h1>
+                    <p>TATHYA MITRA KENDRA</p>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About Us</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                <li><a href="terms.html" class="nav-link">Terms & Policies</a></li>
+            </ul>
+            <div class="header-cta" style="display: flex; gap: 1rem; align-items: center;">
+                <a href="tel:+917890102045" class="btn btn-primary" style="display: none; @media(min-width: 768px){display: inline-flex;}"><i class="ph ph-phone"></i> Call Now</a>
+                <button class="hamburger" aria-label="Toggle Navigation">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Services Ticker -->
+        <div class="services-ticker-wrap">
+            <div class="services-ticker">
+                <div class="ticker-group">
+                    <div class="ticker-item"><i class="ph ph-laptop"></i> Digital India</div>
+                    <div class="ticker-item"><i class="ph ph-buildings"></i> Common Services Centre (CSC)</div>
+                    <div class="ticker-item"><i class="ph ph-fingerprint"></i> Aadhaar (UIDAI)</div>
+                    <div class="ticker-item"><i class="ph ph-bank"></i> Bank of Baroda</div>
+                    <div class="ticker-item"><i class="ph ph-fingerprint"></i> Aadhaar Services</div>
+                    <div class="ticker-item"><i class="ph ph-bank"></i> Bank of Baroda CSP (Banking)</div>
+                    <div class="ticker-item"><i class="ph ph-heartbeat"></i> Jeevan Pramaan</div>
+                    <div class="ticker-item"><i class="ph ph-shield-check"></i> General Insurance</div>
+                    <div class="ticker-item"><i class="ph ph-piggy-bank"></i> NPS (National Pension System)</div>
+                    <div class="ticker-item"><i class="ph ph-identification-card"></i> PAN Card (NSDL/UTIITSL)</div>
+                    <div class="ticker-item"><i class="ph ph-airplane-in-flight"></i> Passport Seva</div>
+                    <div class="ticker-item"><i class="ph ph-identification-badge"></i> Voter ID Services (ECI)</div>
+                    <div class="ticker-item"><i class="ph ph-certificate"></i> Birth & Death Certificate</div>
+                    <div class="ticker-item"><i class="ph ph-file-text"></i> Income, Caste & Residence Certificate</div>
+                    <div class="ticker-item"><i class="ph ph-plant"></i> PM Kisan Samman Nidhi</div>
+                    <div class="ticker-item"><i class="ph ph-first-aid"></i> Ayushman Bharat (PMJAY)</div>
+                    <div class="ticker-item"><i class="ph ph-hard-hat"></i> eShram Registration</div>
+                    <div class="ticker-item"><i class="ph ph-shopping-cart"></i> Ration Card Services</div>
+                    <div class="ticker-item"><i class="ph ph-lightning"></i> Electricity Bill Payment</div>
+                    <div class="ticker-item"><i class="ph ph-device-mobile"></i> Mobile & DTH Recharge</div>
+                    <div class="ticker-item"><i class="ph ph-car"></i> FASTag</div>
+                    <div class="ticker-item"><i class="ph ph-train"></i> Railway & Bus Ticket Booking (IRCTC)</div>
+                    <div class="ticker-item"><i class="ph ph-file-signature"></i> Government Scheme Registration</div>
+                    <div class="ticker-item"><i class="ph ph-credit-card"></i> Digital Payment Services</div>
+                </div>
+                <div class="ticker-group" aria-hidden="true">
+                    <div class="ticker-item"><i class="ph ph-laptop"></i> Digital India</div>
+                    <div class="ticker-item"><i class="ph ph-buildings"></i> Common Services Centre (CSC)</div>
+                    <div class="ticker-item"><i class="ph ph-fingerprint"></i> Aadhaar (UIDAI)</div>
+                    <div class="ticker-item"><i class="ph ph-bank"></i> Bank of Baroda</div>
+                    <div class="ticker-item"><i class="ph ph-fingerprint"></i> Aadhaar Services</div>
+                    <div class="ticker-item"><i class="ph ph-bank"></i> Bank of Baroda CSP (Banking)</div>
+                    <div class="ticker-item"><i class="ph ph-heartbeat"></i> Jeevan Pramaan</div>
+                    <div class="ticker-item"><i class="ph ph-shield-check"></i> General Insurance</div>
+                    <div class="ticker-item"><i class="ph ph-piggy-bank"></i> NPS (National Pension System)</div>
+                    <div class="ticker-item"><i class="ph ph-identification-card"></i> PAN Card (NSDL/UTIITSL)</div>
+                    <div class="ticker-item"><i class="ph ph-airplane-in-flight"></i> Passport Seva</div>
+                    <div class="ticker-item"><i class="ph ph-identification-badge"></i> Voter ID Services (ECI)</div>
+                    <div class="ticker-item"><i class="ph ph-certificate"></i> Birth & Death Certificate</div>
+                    <div class="ticker-item"><i class="ph ph-file-text"></i> Income, Caste & Residence Certificate</div>
+                    <div class="ticker-item"><i class="ph ph-plant"></i> PM Kisan Samman Nidhi</div>
+                    <div class="ticker-item"><i class="ph ph-first-aid"></i> Ayushman Bharat (PMJAY)</div>
+                    <div class="ticker-item"><i class="ph ph-hard-hat"></i> eShram Registration</div>
+                    <div class="ticker-item"><i class="ph ph-shopping-cart"></i> Ration Card Services</div>
+                    <div class="ticker-item"><i class="ph ph-lightning"></i> Electricity Bill Payment</div>
+                    <div class="ticker-item"><i class="ph ph-device-mobile"></i> Mobile & DTH Recharge</div>
+                    <div class="ticker-item"><i class="ph ph-car"></i> FASTag</div>
+                    <div class="ticker-item"><i class="ph ph-train"></i> Railway & Bus Ticket Booking (IRCTC)</div>
+                    <div class="ticker-item"><i class="ph ph-file-signature"></i> Government Scheme Registration</div>
+                    <div class="ticker-item"><i class="ph ph-credit-card"></i> Digital Payment Services</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container fade-in">
+            <h1 style="color: var(--color-white);">About Us</h1>
+            <p style="color: #e5e7eb; max-width: 600px; margin: 1rem auto 0 auto;">Dedicated to empowering citizens through reliable digital services.</p>
+        </div>
+    </section>
+
+    <!-- Main About Content -->
+    <section style="background-color: var(--color-bg); padding-top: 4rem; padding-bottom: 5rem;">
+        <div class="container">
+            <!-- Intro -->
+            <div class="fade-in" style="margin-bottom: 4rem; text-align: center;">
+                <h2 style="color: var(--color-green); margin-bottom: 1rem; font-size: 2.2rem;">Welcome to CSC Nabagram Tathya Mitra Kendra</h2>
+                <p style="color: var(--color-text-light); font-size: 1.1rem; line-height: 1.8; max-width: 900px; margin: 0 auto;">
+                    CSC Nabagram Tathya Mitra Kendra is a premier digital service hub located in Nabagram, West Bengal. We bridge the gap between rural communities and vital digital services. As an authorized Common Services Centre (CSC), we ensure quick, transparent, and hassle-free access to government schemes, financial tools, and digital solutions.
+                </p>
+            </div>
+
+            <div class="grid" style="gap: 4rem; margin-bottom: 4rem;">
+                <!-- Core Mission -->
+                <div class="fade-in">
+                    <h3 style="color: var(--color-navy); margin-bottom: 2rem; font-size: 1.8rem; border-bottom: 3px solid var(--color-green); display: inline-block; padding-bottom: 0.5rem;">Our Core Mission</h3>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 1.5rem;">
+                        <li style="display: flex; gap: 1rem; align-items: flex-start;">
+                            <i class="ph-fill ph-check-circle" style="color: var(--color-saffron); font-size: 1.8rem; flex-shrink: 0; margin-top: 0.2rem;"></i>
+                            <div>
+                                <strong style="color: var(--color-navy); font-size: 1.1rem; display: block; margin-bottom: 0.2rem;">Digital Inclusion</strong>
+                                <span style="color: var(--color-text-light);">Bringing essential online resources directly to your neighborhood.</span>
+                            </div>
+                        </li>
+                        <li style="display: flex; gap: 1rem; align-items: flex-start;">
+                            <i class="ph-fill ph-check-circle" style="color: var(--color-saffron); font-size: 1.8rem; flex-shrink: 0; margin-top: 0.2rem;"></i>
+                            <div>
+                                <strong style="color: var(--color-navy); font-size: 1.1rem; display: block; margin-bottom: 0.2rem;">Community Empowerment</strong>
+                                <span style="color: var(--color-text-light);">Simplifying complex bureaucratic procedures for every citizen.</span>
+                            </div>
+                        </li>
+                        <li style="display: flex; gap: 1rem; align-items: flex-start;">
+                            <i class="ph-fill ph-check-circle" style="color: var(--color-saffron); font-size: 1.8rem; flex-shrink: 0; margin-top: 0.2rem;"></i>
+                            <div>
+                                <strong style="color: var(--color-navy); font-size: 1.1rem; display: block; margin-bottom: 0.2rem;">Reliable Support</strong>
+                                <span style="color: var(--color-text-light);">Delivering accurate documentation and prompt services with complete data security.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Why Choose Our Center? -->
+                <div class="fade-in">
+                    <h3 style="color: var(--color-navy); margin-bottom: 2rem; font-size: 1.8rem; border-bottom: 3px solid var(--color-green); display: inline-block; padding-bottom: 0.5rem;">Why Choose Our Center?</h3>
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div style="background: var(--color-white); padding: 1.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-left: 4px solid var(--color-green);">
+                            <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--color-green); font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem;">
+                                <i class="ph-fill ph-users"></i> Experienced Staff
+                            </div>
+                            <p style="color: var(--color-text-light); margin: 0;">Courteous and knowledgeable operators to guide you through every application step.</p>
+                        </div>
+                        <div style="background: var(--color-white); padding: 1.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-left: 4px solid var(--color-saffron);">
+                            <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--color-saffron); font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem;">
+                                <i class="ph-fill ph-map-pin"></i> Time-Saving Location
+                            </div>
+                            <p style="color: var(--color-text-light); margin: 0;">Centrally located in Nabagram to save you long trips to district offices.</p>
+                        </div>
+                        <div style="background: var(--color-white); padding: 1.5rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-left: 4px solid var(--color-navy);">
+                            <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--color-navy); font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem;">
+                                <i class="ph-fill ph-currency-inr"></i> Transparent Pricing
+                            </div>
+                            <p style="color: var(--color-text-light); margin: 0;">Affordable service charges strictly aligned with government-approved rates.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comprehensive Services We Deliver -->
+            <div class="fade-in" style="margin-top: 5rem;">
+                <h3 style="color: var(--color-navy); margin-bottom: 2.5rem; font-size: 2rem; text-align: center;">Comprehensive Services We Deliver</h3>
+                
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                    <!-- Aadhaar & Identity Services -->
+                    <div style="background: var(--color-white); padding: 2rem; border-radius: var(--radius-md); box-shadow: var(--shadow-md); border-top: 5px solid var(--color-green); transition: var(--transition-normal);" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <h4 style="color: var(--color-navy); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.8rem; font-size: 1.2rem;"><i class="ph ph-fingerprint" style="color: var(--color-green); font-size: 1.8rem;"></i> Aadhaar & Identity</h4>
+                        <ul style="padding-left: 1.5rem; color: var(--color-text-light); line-height: 1.6;">
+                            <li>Demographic updates (name, address, date of birth)</li>
+                            <li>Mobile number and email linking</li>
+                            <li>PVC Aadhaar card printing</li>
+                            <li>New PAN card applications and corrections</li>
+                        </ul>
+                    </div>
+
+                    <!-- Government & Welfare Schemes -->
+                    <div style="background: var(--color-white); padding: 2rem; border-radius: var(--radius-md); box-shadow: var(--shadow-md); border-top: 5px solid var(--color-saffron); transition: var(--transition-normal);" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <h4 style="color: var(--color-navy); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.8rem; font-size: 1.2rem;"><i class="ph ph-bank" style="color: var(--color-saffron); font-size: 1.8rem;"></i> Government Schemes</h4>
+                        <ul style="padding-left: 1.5rem; color: var(--color-text-light); line-height: 1.6;">
+                            <li>West Bengal state scheme applications (Lakshmir Bhandar, Krishak Bandhu)</li>
+                            <li>Central government welfare portals (PM-Kisan, Shram Yogi Maandhan)</li>
+                            <li>Caste, income, and residential certificates</li>
+                            <li>Digital ration card corrections and linking</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Banking & Financial Services -->
+                    <div style="background: var(--color-white); padding: 2rem; border-radius: var(--radius-md); box-shadow: var(--shadow-md); border-top: 5px solid var(--color-navy); transition: var(--transition-normal);" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <h4 style="color: var(--color-navy); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.8rem; font-size: 1.2rem;"><i class="ph ph-wallet" style="color: var(--color-navy); font-size: 1.8rem;"></i> Banking & Financial</h4>
+                        <ul style="padding-left: 1.5rem; color: var(--color-text-light); line-height: 1.6;">
+                            <li>Aadhaar Enabled Payment System (AePS)</li>
+                            <li>Domestic money transfers across India</li>
+                            <li>Utility bill payments (electricity, water, gas, mobile)</li>
+                            <li>Mobile and DTH recharges</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Education & Travel Services -->
+                    <div style="background: var(--color-white); padding: 2rem; border-radius: var(--radius-md); box-shadow: var(--shadow-md); border-top: 5px solid var(--color-green); transition: var(--transition-normal);" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <h4 style="color: var(--color-navy); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.8rem; font-size: 1.2rem;"><i class="ph ph-airplane-in-flight" style="color: var(--color-green); font-size: 1.8rem;"></i> Education & Travel</h4>
+                        <ul style="padding-left: 1.5rem; color: var(--color-text-light); line-height: 1.6;">
+                            <li>Online school, college, and exam form fill-ups</li>
+                            <li>Admit card printing and result checking</li>
+                            <li>Train (IRCTC) and flight ticket bookings</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section style="background-color: var(--color-green); color: var(--color-white); text-align: center;">
+        <div class="container fade-in">
+            <h2 style="color: var(--color-white); margin-bottom: 1rem;">Experience the Difference</h2>
+            <p style="font-size: 1.25rem; margin-bottom: 2rem; color: #e5e7eb;">Join thousands of satisfied citizens who trust us for their digital needs.</p>
+            <a href="contact.html" class="btn btn-secondary" style="font-size: 1.1rem;"><i class="ph ph-envelope-simple"></i> Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>CSC NABAGRAM</h3>
+                    <p>Your Trusted Digital Service Partner under the Common Service Centre ecosystem.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="ph ph-facebook-logo"></i></a>
+                        <a href="#" class="social-icon"><i class="ph ph-twitter-logo"></i></a>
+                        <a href="#" class="social-icon"><i class="ph ph-instagram-logo"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="terms.html">Terms & Policies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links" style="color: #d1d5db;">
+                        <li style="display: flex; gap: 10px; margin-bottom: 10px;">
+                            <i class="ph ph-map-pin" style="font-size: 1.2rem; color: var(--color-saffron);"></i>
+                            <span>P82R+VFP Madhuban City, Naity Road, Near Konnagar Railway Station, Nabagram, Hooghly, West Bengal 712246</span>
+                        </li>
+                        <li style="display: flex; gap: 10px; margin-bottom: 10px;">
+                            <i class="ph ph-phone" style="font-size: 1.2rem; color: var(--color-saffron);"></i>
+                            <a href="tel:+917890102045">+91 78901 02045</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Business Hours</h3>
+                    <ul class="footer-links" style="color: #d1d5db;">
+                        <li style="display: flex; justify-content: space-between;">
+                            <span>Mon - Sat:</span>
+                            <span>10:00 AM – 6:00 PM</span>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 5px; padding-top: 5px;">
+                            <span>Sunday:</span>
+                            <span style="color: var(--color-saffron);">Closed</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> CSC Nabagram - Tathya Mitra Kendra. All rights reserved.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/917890102045" target="_blank" class="floating-whatsapp" aria-label="WhatsApp Us">
+        <i class="ph ph-whatsapp-logo"></i>
+    </a>
+    
+    <button id="backToTop" aria-label="Back to Top">
+        <i class="ph ph-caret-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
