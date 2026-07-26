@@ -851,6 +851,8 @@ footer {
   100% {
     transform: translateX(-50%);
   }
+}
+
 /* Preloader */
 #preloader {
   position: fixed;
