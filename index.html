@@ -17,6 +17,10 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.cscnaba.example.com">
 
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://upload.wikimedia.org">
     <!-- CSS and Fonts -->
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -50,6 +54,12 @@
 </head>
 
 <body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
 
     <!-- Header Navigation -->
     <header>
@@ -158,29 +168,29 @@
                 <!-- Left Icon Grid (2x3) -->
                 <div class="icon-grid icon-grid-left">
                     <div class="icon-tile tile-gold" title="Aadhaar">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Aadhaar_Logo.svg/1920px-Aadhaar_Logo.svg.png"
+                        <img loading="lazy" decoding="async" fetchpriority="auto" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Aadhaar_Logo.svg/1920px-Aadhaar_Logo.svg.png"
                             alt="Aadhaar Logo" class="service-logo" />
                     </div>
                     <div class="icon-tile tile-green" title="Ayushman Bharat">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/1/1a/Ayushman_Bharat_logo.png?_=20220506000059"
+                        <img loading="lazy" decoding="async" fetchpriority="auto" src="https://upload.wikimedia.org/wikipedia/en/1/1a/Ayushman_Bharat_logo.png?_=20220506000059"
                             alt="Ayushman Bharat Logo" class="service-logo" />
                     </div>
 
                     <div class="icon-tile tile-green" title="Jeevan Praman (Life Certificate)">
-                        <img src="https://play-lh.googleusercontent.com/wIWurMlWgTsXlw49_BJydzpT9rYvdgEAUgNlABAgY7qP3xqHXiaWk6JvAzlwuA5ULZvCuxVPrdtq972k67VcJJY"
+                        <img loading="lazy" decoding="async" fetchpriority="auto" src="https://play-lh.googleusercontent.com/wIWurMlWgTsXlw49_BJydzpT9rYvdgEAUgNlABAgY7qP3xqHXiaWk6JvAzlwuA5ULZvCuxVPrdtq972k67VcJJY"
                             alt="Jeevan Pramaan Logo" class="service-logo" />
                     </div>
                     <div class="icon-tile tile-gold" title="PM Kisaan">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/b/b4/Pradhan_Mantri_Fasal_Bima_Yojana_%28PMFBY%29_logo.png"
+                        <img loading="lazy" decoding="async" fetchpriority="auto" src="https://upload.wikimedia.org/wikipedia/en/b/b4/Pradhan_Mantri_Fasal_Bima_Yojana_%28PMFBY%29_logo.png"
                             alt="PM Kisaan Logo" class="service-logo" />
                     </div>
 
                     <div class="icon-tile tile-gold" title="NPS Logo">
-                        <img src="https://npstrust.org.in/sites/default/files/logo.png" alt="NPS Logo"
+                        <img loading="lazy" decoding="async" fetchpriority="auto" src="https://npstrust.org.in/sites/default/files/logo.png" alt="NPS Logo"
                             class="service-logo" />
                     </div>
                     <div class="icon-tile tile-green" title="NSDL">
-                        <img src="https://nsdl.com/images/logo.svg" alt="NSDL Logo" class="service-logo">
+                        <img loading="lazy" decoding="async" fetchpriority="auto" src="https://nsdl.com/images/logo.svg" alt="NSDL Logo" class="service-logo">
                     </div>
                 </div>
 
@@ -210,15 +220,15 @@
                 <!-- Right Icon Grid (1x3) -->
                 <div class="icon-grid icon-grid-right">
                     <div class="icon-tile tile-gold" title="Bank of Baroda">
-                        <img src="https://1000logos.net/wp-content/uploads/2021/06/Bank-of-Baroda-icon.png"
+                        <img loading="lazy" decoding="async" fetchpriority="auto" src="https://1000logos.net/wp-content/uploads/2021/06/Bank-of-Baroda-icon.png"
                             alt="Bank of Baroda Logo" class="service-logo" />
                     </div>
                     <div class="icon-tile tile-green" title="Rashan Card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz2HnUyxR5xwgK6TdlXChXiBnvWCTY1NSEV9ISno-2l3vBcCXxIpg2gfz5&s=10"
+                        <img loading="lazy" decoding="async" fetchpriority="auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz2HnUyxR5xwgK6TdlXChXiBnvWCTY1NSEV9ISno-2l3vBcCXxIpg2gfz5&s=10"
                             alt="Rashan" class="service-logo">
                     </div>
                     <div class="icon-tile tile-gold" title="IRCTC_Logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/45/IRCTC_Logo.svg/1920px-IRCTC_Logo.svg.png"
+                        <img loading="lazy" decoding="async" fetchpriority="auto" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/45/IRCTC_Logo.svg/1920px-IRCTC_Logo.svg.png"
                             alt="IRCTC" class="service-logo">
                     </div>
                 </div>
@@ -373,28 +383,28 @@
             <div class="fade-in"
                 style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4rem;">
                 <div style="text-align: center;">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/7/77/Common_Service_Centres_logo.png" alt="CSC"
+                    <img loading="lazy" decoding="async" fetchpriority="auto" src="https://upload.wikimedia.org/wikipedia/en/7/77/Common_Service_Centres_logo.png" alt="CSC"
                         style="height: 70px; width: auto; object-fit: contain; margin: 0 auto 0.5rem auto;">
 
                 </div>
                 <div style="text-align: center;">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Aadhaar_Logo.svg" alt="Aadhaar"
+                    <img loading="lazy" decoding="async" fetchpriority="auto" src="https://upload.wikimedia.org/wikipedia/en/c/cf/Aadhaar_Logo.svg" alt="Aadhaar"
                         style="height: 70px; width: auto; object-fit: contain; margin-bottom: 0.5rem;">
                 </div>
                 <div style="text-align: center;">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/1/1a/Ayushman_Bharat_logo.png"
+                    <img loading="lazy" decoding="async" fetchpriority="auto" src="https://upload.wikimedia.org/wikipedia/en/1/1a/Ayushman_Bharat_logo.png"
                         alt="Ayushman Bharat"
                         style="height: 95px; width: auto; object-fit: contain; margin: 0 auto 0.5rem auto;">
 
                 </div>
                 <div style="text-align: center;">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/BankOfBarodaLogo.svg/250px-BankOfBarodaLogo.svg.png"
+                    <img loading="lazy" decoding="async" fetchpriority="auto" src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/BankOfBarodaLogo.svg/250px-BankOfBarodaLogo.svg.png"
                         alt="Bank of Baroda"
                         style="height: 50px; width: auto; object-fit: contain; margin: 0 auto 0.5rem auto;">
 
                 </div>
                 <div style="text-align: center;">
-                    <img src="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://licindia.in&size=128"
+                    <img loading="lazy" decoding="async" fetchpriority="auto" src="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://licindia.in&size=128"
                         alt="LIC Insurance"
                         style="height: 60px; width: auto; object-fit: contain; margin: 0 auto 0.5rem auto;">
 
