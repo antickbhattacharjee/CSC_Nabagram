@@ -102,4 +102,38 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Contact Form WhatsApp Submission
+    const contactForm = document.querySelector('#contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value.trim();
+
+            const whatsappMessage = 
+`Hello CSC Nabagram,
+
+I have a new enquiry from the website.
+
+*Name:* ${name}
+*Phone:* ${phone}
+*Email:* ${email || 'Not provided'}
+*Service:* ${service}
+
+*Message:*
+${message}
+
+Thank you.`;
+
+            const whatsappURL = `https://wa.me/917890102045?text=${encodeURIComponent(whatsappMessage)}`;
+            window.open(whatsappURL, '_blank');
+
+            contactForm.reset();
+        });
+    }
 });
