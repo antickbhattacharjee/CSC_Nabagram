@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Back to top button
     const backToTopButton = document.getElementById('backToTop');
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 300) {
             backToTopButton.classList.add('show');
@@ -60,13 +60,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Intersection Observer for scroll animations (fade-in elements)
     const faders = document.querySelectorAll('.fade-in');
-    
+
     const appearOptions = {
         threshold: 0.15,
         rootMargin: "0px 0px -50px 0px"
     };
 
-    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    const appearOnScroll = new IntersectionObserver(function (entries, observer) {
         entries.forEach(entry => {
             if (!entry.isIntersecting) {
                 return;
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Accordion functionality for Terms and Policies
     const accordions = document.querySelectorAll('.accordion-btn');
     accordions.forEach(acc => {
-        acc.addEventListener('click', function() {
+        acc.addEventListener('click', function () {
             this.classList.toggle('active');
             const panel = this.nextElementSibling;
             if (panel.style.maxHeight) {
